@@ -4,8 +4,6 @@ C195 Software II Performance Assessment
 Purpose of Application:
 The purpose of this application is to handle scheduling of appointments for customers and to create various useful reports of appointment and customer information.
 
-Author: Aidan Strawder
-Contact information: adstrawder@gmail.com
 Application version: 1.0
 Date: 11/1/2022
 IDE: Intellij Community Edition 2021.2.1
