@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="705.0" prefWidth="1269.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <BorderPane fx:id="mainBorderPane" prefHeight="705.0" prefWidth="1065.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <GridPane style="-fx-background-color: #008080;" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="150.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="199.0" minHeight="10.0" prefHeight="40.0" />
+                  <RowConstraints maxHeight="322.0" minHeight="10.0" prefHeight="40.0" />
+                  <RowConstraints maxHeight="392.0" minHeight="10.0" prefHeight="40.0" />
+                  <RowConstraints maxHeight="438.0" minHeight="10.0" prefHeight="40.0" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="497.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="customerButton" mnemonicParsing="false" onAction="#onCustomersButtonClick" prefHeight="50.0" prefWidth="173.0" style="-fx-background-color: #008080;" text="Customers" textFill="WHITE" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/customers.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="appointmentButton" mnemonicParsing="false" onAction="#onAppointmentsButtonClick" prefHeight="50.0" prefWidth="173.0" style="-fx-background-color: #008080;" text="Appointments" textFill="WHITE" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/appointments.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="reportsButton" mnemonicParsing="false" onAction="#onReportsButtonClick" prefHeight="50.0" prefWidth="173.0" style="-fx-background-color: #008080;" text="Reports" textFill="WHITE" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="14.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="signOutButton" mnemonicParsing="false" onAction="#onSignOutButtonClick" prefHeight="50.0" prefWidth="173.0" style="-fx-background-color: #008080;" text="Sign Out" textFill="WHITE" GridPane.rowIndex="3" GridPane.valignment="TOP">
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="12.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/signout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="exitButton" mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #008080;" text="Exit" textFill="WHITE" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Cambria Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </GridPane>
+         </left>
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="893.0" style="-fx-background-color: #004E4F;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Scheduler" textFill="WHITE" underline="true">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Cambria Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin></HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

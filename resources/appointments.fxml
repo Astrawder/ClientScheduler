@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="564.0" prefWidth="1014.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AppointmentController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="953.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <TableView fx:id="appointmentTable" prefHeight="434.0" prefWidth="955.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="idColumn" minWidth="107.0" prefWidth="107.0" text="Appointment_ID" />
+                <TableColumn fx:id="titleColumn" minWidth="61.0" prefWidth="61.0" text="Title" />
+                  <TableColumn fx:id="descriptionColumn" minWidth="84.0" prefWidth="84.0" text="Description" />
+                  <TableColumn fx:id="locationColumn" minWidth="93.0" prefWidth="93.0" text="Location" />
+                  <TableColumn fx:id="contactColumn" minWidth="83.0" prefWidth="83.0" text="Contact" />
+                  <TableColumn fx:id="typeColumn" minWidth="60.0" prefWidth="60.0" text="Type" />
+                  <TableColumn fx:id="startTimeColumn" minWidth="135.0" prefWidth="135.0" text="Start Date/Time" />
+                  <TableColumn fx:id="endTimeColumn" minWidth="135.0" prefWidth="135.0" text="End Date/Time" />
+                  <TableColumn fx:id="customerIDColumn" minWidth="76.0" prefWidth="76.0" text="Customer_ID" />
+                  <TableColumn fx:id="userIDColumn" minWidth="58.0" prefWidth="65.0" text="User_ID" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </center>
+         <bottom>
+            <GridPane BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onAddAppointmentClick" text="Add" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#onUpdateAppointmentClick" text="Update" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#onDeleteAppointmentClick" text="Delete" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="allRadioButton" mnemonicParsing="false" onAction="#onAllFilterRadioClick" prefHeight="17.0" prefWidth="35.0" text="All" GridPane.halignment="RIGHT" />
+                  <RadioButton fx:id="weeklyRadioButton" mnemonicParsing="false" onAction="#onWeeklyFilterRadioClick" text="Weekly" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                  <RadioButton fx:id="monthlyRadioButton" mnemonicParsing="false" onAction="#onMonthlyFilterRadioClick" prefHeight="17.0" prefWidth="66.0" text="Monthly" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+         </bottom>
+         <top>
+            <Pane prefHeight="30.0" prefWidth="1014.0" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <Pane prefHeight="434.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="434.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
