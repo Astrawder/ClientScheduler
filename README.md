@@ -4,12 +4,6 @@ C195 Software II
 Purpose of Application:
 The purpose of this application is to handle scheduling of appointments for customers and to create various useful reports of appointment and customer information.
 
-Application version: 1.0
-
-Date: 11/1/2022
-
-IDE: Intellij Community Edition 2021.2.1
-
 JDK: Java-SE-17.0.4.1
 
 JavaFX: JavaFX-SDK-18.0.2
